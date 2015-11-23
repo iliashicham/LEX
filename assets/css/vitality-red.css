@@ -10,6 +10,9 @@ body {
 .justified {
   text-align: justify;
 }
+.centered {
+  text-align: center;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -134,7 +137,7 @@ h6 {
 }
 @media (min-width: 481px) {
   h1 {
-    font-size: 52px;
+    font-size: 55px;
   }
   h2 {
     font-size: 50px;
@@ -156,6 +159,11 @@ hr.right {
 hr.colored {
   border-color: #ef4035;
 }
+/*@media (max-width: 600px) {
+  header .brand-name {
+  letter-spacing: 0.3em;
+  }
+}*/
 @media (min-width: 768px) {
   hr {
     max-width: 200px;
@@ -282,14 +290,29 @@ header .intro-content {
   text-align: center;
   position: relative;
 }
-header .brand-name {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 55px;
-  line-height: 55px;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-top: 15px;
-  letter-spacing: 30px;
+@media (min-width: 768px) {
+  header .brand-name {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 0.5em;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header .brand-name {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    text-align: center;
+  }
 }
 header .brand-name-subtext {
   font-size: 20px;
@@ -335,7 +358,7 @@ header .scroll-down .btn:hover {
   header .intro-content {
     color: white;
     text-align: center;
-    width: 50%;
+    /*width: 50%;*/
     margin: auto;
     position: absolute;
     top: 50%;
